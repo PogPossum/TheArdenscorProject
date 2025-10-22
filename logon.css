@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&display=swap');
+:root{
+    --primary-color: #11121a;
+    --secondary-color: #2c2f30;
+    --hover-color: #3d3e4b;
+    --accent-color: #f3ae48;
+    --text-color: #c9c9c9;
+}
+h1{
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+h2{
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Orbitron, "Segoe UI", sans-serif;
+    color: var(--text-color);
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--primary-color);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.wrapper{
+    width: 420px;
+    background-color: var(--accent-color);
+}
