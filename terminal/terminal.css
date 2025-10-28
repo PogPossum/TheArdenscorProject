@@ -149,20 +149,3 @@ nav a {
     font-size: 11px;
   }
 }
-
-@media screen and (max-width: 480px) {
-  .terminal-container {
-    width: 95vw;
-    height: 300px;
-  }
-  
-  .project-title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .terminal-window {
-    font-size: 10px;
-    padding: 8px;
-  }
-}
