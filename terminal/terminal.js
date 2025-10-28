@@ -97,7 +97,7 @@ class DOSTerminal {
     this.addLine('                                                                 ', 'ascii-art');
     this.addLine('#################################################################', 'ascii-art');
     this.addLine('');
-    this.addLine(` Last login: time: ${timeStr}  date: ${dateStr}`, 'system-text');
+    this.addLine(` Time: ${timeStr}  Date: ${dateStr}`, 'system-text');
     this.addLine('');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine(' [1] Om mig             [4] Arbejdserfaring ', 'menu-option');
@@ -125,7 +125,7 @@ class DOSTerminal {
       { key: '2', action: () => this.showUddandelseMenu() },
       { key: '3', action: () => this.showKontaktMenu() },
       { key: '4', action: () => this.showArbejdeMenu() },
-      { key: '5', action: () => this.showMainMenu() },
+      { key: '5', action: () => this.showPlaceholderMenu() },
       { key: '0', action: () => this.exitProgram() }
     ];
 
@@ -318,10 +318,10 @@ class DOSTerminal {
     this.addLine('                    -- Kontakt Infomation --', 'highlight-text');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine('                                                                 ', 'ascii-art');
-    this.addLine(' [  Navn: Ashley A. Ardenscor', 'system-text');
-    this.addLine(' [  Email: ashleyardenscor@gmail.com', 'system-text');
-    this.addLine(' [  LinkdIn: Ashley Ardenscor', 'system-text');
-    this.addLine(' [  GitHub: PogPossum', 'system-text');
+    this.addLine(' [] --  Navn: Ashley A. Ardenscor', 'system-text');
+    this.addLine(' [] --  Email: ashleyardenscor@gmail.com', 'system-text');
+    this.addLine(' [] --  LinkdIn: Ashley Ardenscor', 'system-text');
+    this.addLine(' [] --  GitHub: PogPossum', 'system-text');
     this.addLine('                                                                 ', 'ascii-art');this.addLine(' ');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine('');
@@ -346,6 +346,33 @@ class DOSTerminal {
     this.addLine('                                                                 ', 'ascii-art');
     this.addLine('[] -- Mercantec SOC Helpdesk / Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Frivillig Intern IT Support / EuroSKills 2025, Herning', 'system-text');
+    this.addLine('                                                                 ', 'ascii-art');
+    this.addLine('=================================================================', 'ascii-art');
+    this.addLine('');
+    
+    this.addLine('Choose an option ():', 'system-text');
+      this.addClickableSubOptions([
+      { key: '0] -- Return', action: () => this.showMainMenu() }
+    ]);
+  }
+
+    async showPlaceholderMenu() {
+    this.clearTerminal();
+
+    this.addLine(''); 
+    this.addLine('#################################################################', 'ascii-art');
+    this.addLine('                                                                 ', 'ascii-art');
+    this.addLine('    (C) Copyright /\\RDNSCR Computing Ltd. Interactive Resume', 'system-text');
+    this.addLine('                                                                 ', 'ascii-art');
+    this.addLine('#################################################################', 'ascii-art');
+    this.addLine('                        -- PLACEHOLDER --', 'highlight-text');
+    this.addLine('=================================================================', 'ascii-art');
+    this.addLine('                                                                 ', 'ascii-art');
+    this.addLine('[] -- ', 'system-text');
+    this.addLine('[] -- ', 'system-text');
+    this.addLine('[] -- ', 'system-text');
+    this.addLine('[] -- ', 'system-text');
+    this.addLine('[] -- ', 'system-text');
     this.addLine('                                                                 ', 'ascii-art');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine('');
@@ -398,4 +425,3 @@ document.addEventListener('keydown', (e) => {
     });
   }
 });
-
