@@ -226,36 +226,6 @@ details p{
     border: none;
 }
 
-
-@media screen and (max-width: 700px){
-    nav{
-        position: fixed;
-        top: 0;
-        right: 0 ;
-        width: min(15em, 100%);
-        z-index: 10;
-        border-left: 1px solid var(--hover-color);
-        transition: right 300ms ease-out;
-    }
-    nav.show{
-        right: 0;
-    }
-    nav ul{
-        width: 100%;
-        flex-direction: column;
-    }
-    nav a{
-        width: 100%;
-        padding-left: 2.5em;
-    }
-    nav a.activelink{
-        border-bottom: none;
-    }
-    nav .home-li{
-        margin-right: unset;
-    }
-}
-
 .cursor{
     font-weight: 700;
     animation: 1s blink step-end infinite;
@@ -269,3 +239,4 @@ details p{
         color: var(--accent-color);
     }
 }
+
