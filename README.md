@@ -6,6 +6,6 @@
   <br>I did have to redo the DOS menu from batch to java script, but I had another teacher help me out troubleshoot.<br>
   <br>------------ ------------ ------------ ------------ ------------ ------------ ------------<br>
   <br>-- The website will be patched and tweaked as I get better at coding --<br>
-  <br>I am working on making it mobile device compatible</p>
+  <br>-- I am working on making it mobile device compatible</p>
 
 ###
