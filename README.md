@@ -10,13 +10,3 @@
   -- The page is compatible with mobile devices, tho a lil funky</p>
 
 ###
-
-<p align-"left">version_3 <br> 
--- was the first public version, cleaned up unnecesary code files. </p>
-
-<p align-"left">version_4 <br>
--- tweaked terminal.js. Made the 5th option on the terminal [PLACEHOLDER] a working option. </p>
-
-<p align-"left">version_5 <br>
--- website made mobile device compatible. <br>
--- changed colour on terminal-header. </p>
