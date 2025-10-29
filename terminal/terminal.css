@@ -7,6 +7,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Navigation styling is handled by style.css */
@@ -208,3 +210,4 @@ img, video, iframe{
     height: auto;
     display: block;
 }
+
