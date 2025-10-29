@@ -6,12 +6,12 @@
 
 ###
 
-<p align-"left"> rdnscr web v3 <br> 
+<p align-"left">rdnscr web v3 <br> 
 -- was the first public version, cleaned up unnecesary code files. </p>
 
-rdnscr web v4 
--- tweaked terminal.js. Made the 5th option on the terminal [PLACEHOLDER] a working option.
+<p align-"left">rdnscr web v4 <br>
+-- tweaked terminal.js. Made the 5th option on the terminal [PLACEHOLDER] a working option. </p>
 
-rdnscr web v5
+<p align-"left">rdnscr web v5 <br>
 -- website made mobile device compatible
--- changed colour on terminal-header
+-- changed colour on terminal-header </p>
