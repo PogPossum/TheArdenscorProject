@@ -7,43 +7,17 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
-/* Ensure navigation keeps its original styling */
-nav {
-  position: relative !important;
-  width: 100% !important;
-  background-color: var(--primary-color) !important;
-  border-bottom: 1px solid var(--hover-color) !important;
-}
-
-nav ul {
-  display: flex !important;
-  list-style: none !important;
-  flex-direction: row !important;
-  width: auto !important;
-}
-
-nav li {
-  display: flex !important;
-}
-
-nav a {
-  display: flex !important;
-  text-decoration: none !important;
-  color: var(--text-color) !important;
-  padding: 1em 2em !important;
-  transition: background-color 150ms ease !important;
-}
+/* Navigation styling is handled by style.css */
 
 /* Main content container for centering the terminal */
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .project-title {
@@ -56,18 +30,33 @@ nav a {
 }
 
 .terminal-container {
-  width: 500px;
+  min-width: 500px; /* Maintain minimum width for ASCII art */
+  width: 500px; /* Fixed width to prevent squishing */
   height: 450px;
   background-color: #000000;
   position: relative;
   border: 2px solid #3d3e4b;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(243, 174, 72, 0.3);
-  margin: 2rem 0;
+  margin: 2rem auto;
+}
+
+/* Container for horizontal scrolling on mobile */
+@media (max-width: 700px) {
+  .main-content {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 1rem;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  .terminal-container {
+    margin: 1rem auto;
+  }
 }
 
 .terminal-header {
-  background-color: #000080;
+  background-color: #f3ae48;
   color: #FFFFFF;
   padding: 5px 10px;
   font-size: 12px;
@@ -76,7 +65,6 @@ nav a {
   justify-content: space-between;
   align-items: center;
 }
-
 .terminal-window {
   background-color: #000000;
   color: #C0C0C0;
@@ -90,12 +78,12 @@ nav a {
   word-wrap: break-word;
 }
 
+/* "cursor" animation */
 .blink {
   background-color: #C0C0C0;
   color: #000000;
   animation: blink 1s infinite;
 }
-
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
@@ -125,27 +113,98 @@ nav a {
 }
 
 .error-text {
-  color: #FF0000;
+  color: #f74545;
 }
 
 .success-text {
-  color: #00FF00;
+  color: #4df14d;
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
-  .terminal-container {
-    width: 90vw;
-    max-width: 500px;
-    height: 350px;
-  }
-  
-  .project-title {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .terminal-window {
-    font-size: 11px;
-  }
+/* Responsive hamburger / right-side nav */
+.hamburger{
+    display: none; /* shown on small screens */
+    position: fixed;
+    right: 1rem;
+    top: 0.75rem;
+    z-index: 1200;
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    font-size: 1.6rem;
+    padding: .4rem .6rem;
+    cursor: pointer;
+}
+
+/* Default (desktop) keep existing nav layout */
+
+/* Small screens: collapse nav and use slide-in panel */
+@media (max-width: 700px){
+    body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    nav#siteNav{
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 0; /* collapsed */
+        overflow: hidden;
+        background-color: rgba(17,18,26,0.98);
+        box-shadow: -6px 0 20px rgba(0,0,0,0.5);
+        transition: width 260ms ease;
+        z-index: 1100;
+    }
+
+    nav#siteNav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 3.5rem;
+    }
+
+    nav#siteNav a{
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+
+    /* When nav has .open it reveals itself */
+    nav#siteNav.open{
+        width: 260px;
+    }
+
+    /* hide the desktop nav flex behavior when collapsed */
+    nav ul{
+        display: none;
+    }
+
+    nav#siteNav.open ul{
+        display: flex;
+    }
+
+    /* ensure footer and main content are not pushed off-screen */
+    main, .main-content, section, footer{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Adjust details box sizing */
+    details{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
+    }
+
+}
+
+/* make sure images don't overflow */
+img, video, iframe{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
