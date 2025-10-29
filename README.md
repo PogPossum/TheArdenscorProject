@@ -18,5 +18,5 @@
 -- tweaked terminal.js. Made the 5th option on the terminal [PLACEHOLDER] a working option. </p>
 
 <p align-"left">version_5 <br>
--- website made mobile device compatible <br>
--- changed colour on terminal-header </p>
+-- website made mobile device compatible. <br>
+-- changed colour on terminal-header. </p>
