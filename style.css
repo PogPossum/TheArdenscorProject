@@ -6,6 +6,7 @@
     --accent-color: #f3ae48;
     --text-color: #c9c9c9;
 }
+
 h1{
     font-size: 2rem;
     color: var(--accent-color);
@@ -15,13 +16,16 @@ h2{
     color: var(--accent-color);
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-align: left;
     color: var(--text-color);
 }
-h6{ /*spacer colour*/
+/* spacer colour */
+h6{ 
     font-size: 1.5rem;
     color: var(--secondary-color);
 }
+
 
 *{
     margin: 0;
@@ -46,6 +50,8 @@ main{
 main p{
     margin-top: .35em;
 }
+
+/* nav bar */
 nav{
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--hover-color);
@@ -86,7 +92,7 @@ section p{
     text-align: left;
 }
 
-
+/* project boxes */
 .project{
     margin-top: 1rem;
     padding: 1.5em;
@@ -112,7 +118,7 @@ img {
     font-size: 20px;
     align-items: left;
 }
-
+/**/
 footer{
     padding: 1em;
     padding-bottom: 1.5em;
@@ -129,7 +135,7 @@ footer a:hover{
 }
 
 
-/*about me boxes*/
+/* about me drop menus */
 details{
     position: center;
     margin-top: 1em;
@@ -164,7 +170,7 @@ details p{
 }
 
 
-/*login screen*/
+/* login screen */
 .wrapper{
     margin: auto;
     padding: 0.3em;
@@ -226,7 +232,9 @@ details p{
     border: none;
 }
 
-.cursor{
+
+/* blink animation */
+.cursor{ 
     font-weight: 700;
     animation: 1s blink step-end infinite;
 }
@@ -240,3 +248,81 @@ details p{
     }
 }
 
+
+/* Responsive hamburger */
+.hamburger{
+    display: none; /* shown on small screens */
+    position: fixed;
+    right: 1rem;
+    top: 0.75rem;
+    z-index: 1200;
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    font-size: 1.6rem;
+    padding: .4rem .6rem;
+    cursor: pointer;
+}
+
+
+/* Default (desktop) keep existing nav layout */
+/* Small screens: collapse nav and use slide-in panel */
+@media (max-width: 700px){
+    body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav#siteNav{
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 0; /* collapsed */
+        overflow: hidden;
+        background-color: rgba(17,18,26,0.98);
+        box-shadow: -6px 0 20px rgba(0,0,0,0.5);
+        transition: width 260ms ease;
+        z-index: 1100;
+    }
+    nav#siteNav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 3.5rem;
+    }
+    nav#siteNav a{
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    nav#siteNav.open{
+        width: 260px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav#siteNav.open ul{
+        display: flex;
+    }
+    /* ensure footer and main content are not pushed off-screen */
+    main, .main-content, section, footer{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    /* Adjust details box sizing */
+    details{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
+    }
+
+}
+
+/* make sure images don't overflow */
+img, video, iframe{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
