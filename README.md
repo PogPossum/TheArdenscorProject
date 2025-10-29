@@ -9,7 +9,7 @@
   <br>============ ============ ============ ============<br>
   
   <br>[ The website will be patched and tweaked as I get better at coding ]<br>
-  - The page is compatible with mobile devices, tho a lil funky</p>
+  -- The page is compatible with mobile devices, tho a lil funky</p>
 
 ###
 
