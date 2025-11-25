@@ -1,4 +1,4 @@
-<h3 align="left">THE /\RDNSCR PROJECT</h3>
+<h3 align="left">THE /\RDENSCOR PROJECT</h3>
 
 ###
 
