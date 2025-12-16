@@ -290,6 +290,8 @@ class DOSTerminal {
     this.addLine('                   -- Uddannelsesforløb --', 'highlight-text');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine(' ');
+    this.addLine('[] -- Cloud CEDCE Kursus / ULC Erhvervsakademi og', 'system-text');
+    this.addLine('      Professionshøjskole, Oddense', 'system-text');
     this.addLine('[] -- Hovedforløb 1 - Data og IT / Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Grundforløb 2 - Data og Kommunikation / Tradium, Randers', 'system-text');
     this.addLine('[] -- Medie og Journalistik / FGU, Aarhus ', 'system-text');
@@ -425,3 +427,4 @@ document.addEventListener('keydown', (e) => {
     });
   }
 });
+
