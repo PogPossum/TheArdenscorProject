@@ -185,7 +185,7 @@ class DOSTerminal {
     this.addLine(' [1]  -- Hvem er jeg.', 'menu-option');
     this.addLine(' --------------------------------------------------', 'ascii-art');
     this.addLine('   [  Jeg er en engageret, nysgerring og udadvendt ', 'system-text');
-    this.addLine('   [ kvinde på 26, som bor med min kæreste i Randers.', 'system-text');
+    this.addLine('   [ kvinde på 27, som bor med min kæreste i Randers.', 'system-text');
     this.addLine('   [  Jeg kommer oprindeligt fra Sjælland, ', 'system-text');
     this.addLine('   [ men flyttede til Aarhus med min mor i 00\'erne.', 'system-text');
     this.addLine('   [  Jeg har altid haft en stor fasination omkring ', 'system-text');
@@ -427,4 +427,5 @@ document.addEventListener('keydown', (e) => {
     });
   }
 });
+
 
