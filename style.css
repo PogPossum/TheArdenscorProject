@@ -5,6 +5,7 @@
     --hover-color: #3d3e4b;
     --accent-color: #f3ae48;
     --text-color: #c9c9c9;
+    --login-color: #3d3e4b;
 }
 
 h1{
@@ -24,6 +25,11 @@ h3{
 h6{ 
     font-size: 1.5rem;
     color: var(--secondary-color);
+}
+
+.login-color{
+    color: var(--login-color);
+    font-weight: bold;
 }
 
 
@@ -326,3 +332,5 @@ img, video, iframe{
     height: auto;
     display: block;
 }
+
+
