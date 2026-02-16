@@ -8,5 +8,6 @@
   <br>============ ============ ============ ============<br>
   <br>[ The website will be patched and tweaked as I get better at coding ]<br>
   <br>-- The page is compatible with mobile devices, tho a lil funky</p>
+  <br>---- burger menu does not work</p>
 
 ###
