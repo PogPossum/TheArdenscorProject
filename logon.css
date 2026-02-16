@@ -5,6 +5,7 @@
     --hover-color: #3d3e4b;
     --accent-color: #f3ae48;
     --text-color: #c9c9c9;
+    --login-color: #3d3e4b;
 }
 h1{
     font-size: 2rem;
@@ -38,3 +39,4 @@ body{
     width: 420px;
     background-color: var(--accent-color);
 }
+
