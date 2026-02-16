@@ -7,7 +7,7 @@
   I did have to redo the DOS menu from batch to java script, but I had another teacher help me out troubleshoot. <br>
   <br>============ ============ ============ ============<br>
   <br>[ The website will be patched and tweaked as I get better at coding ]<br>
-  <br>-- The page is compatible with mobile devices, tho a lil funky</p>
+  <br>-- The page is compatible with mobile devices, tho a lil funky<br>
   <br>---- burger menu does not work</p>
 
 ###
