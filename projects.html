@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", intial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>/\RDNSCR Projects</title>
         <link rel="icon" href="images/favicon2.ico" type="images/x-icon">
 
@@ -12,12 +12,13 @@
 
     <!-- nav bar -->
     <body>
-        <nav>
+        <button id="navToggle" class="hamburger" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav">
             <ul>
                 <li class="home-li"><a class="active-link" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a class="accent-link login-color" href="login.html">Login</a></li>
+                <li><a class="accent-link login-color"></a></li>
             </ul>
         </nav>
     <!-- header -->
@@ -29,32 +30,32 @@
         <div class="flex-container">
  
         <section class="project">
-            <h2>ServerReport</h2>
-            <p>I got an assignment to write a script that would pull select info out of our troubleshooting systems.</p>
-            <p>The info included;</p>
-            <p>- Server Name</p>
+            <h2>ServerReport Script</h2>
+            <p>Jeg fik til opgave om at lave et script der kunne tage info ud af vores fejlfindingsmiljø'er</p>
+            <p>Den info inkludere;</p>
+            <p>- Server Navn</p>
             <p>- OS Version</p>
-            <p>- If there's available updates</p>
-            <p>- IP Address</p>
-            <p>- Subnet Mask</p>
+            <p>- Om der er tilgængelige opdateringer</p>
+            <p>- IP Addresse</p>
+            <p>- Subnet Masken</p>
             <p>- Default Gateway</p>
-            <p>- Installed Server Roles</p>
+            <p>- Installerede Server Roller</p>
             <h6>------------</h6>
-            <p>Check it out on my GitHub!</p>
+            <p>Check det ud på min GitHub!</p>
         </section>
 
         <section class="project">
             <h2>The /\RDNSCR Project</h2>
-            <p>This website!</p>
-            <p>My teacher encouraged me to make a website so I could actually show people my interactive resume, without the sketchy vibe of sending an unprompted batch script.</p>
+            <p>Den her hjemmeside!</p>
+            <p>Min lærer opfordrede mig til at lave en hjemmeside, så jeg rent faktisk kunne vise folk mit interaktive CV, uden den sketchy vibe af at sende et uopfordret batch-script.</p>
             <h6>------------</h6>
-            <p>So now we got this website resume!</p>
+            <p>Så nu har vi denne hjemmside som resume!</p>
         </section>
 
         <section class="project">
             <h2>Interactive Resume DOS Menu</h2>
-            <p>I decided to make my resume as a DOS Menu because I thought it would make an otherwise resume a bit more fun!</p>
-            <p>I had no idea it would result in me making a website tho.</p>
+            <p>Jeg besluttede at lave mit CV som en DOS-menu, fordi jeg tænkte, at det ville gøre et ellers CV lidt sjovere.!</p>
+            <p>Jeg havde ingen ide om, at det ville resultere i, at jeg lavede en hjemmeside.</p>
             <h6>------------</h6>
                 <img height="310px" width="330px" src="images/intrespic.PNG">
         </section>
@@ -68,11 +69,6 @@
             <a href="https://github.com/PogPossum?tab=repositories" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/ashley-a-194169353" target="_blank">LinkedIn</a>
         </footer>
+    <script src="nav.js"></script>
     </body>
 </html>
-
-
-
-
-
-
