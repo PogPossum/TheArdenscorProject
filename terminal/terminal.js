@@ -101,7 +101,7 @@ class DOSTerminal {
     this.addLine('');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine(' [1] Om mig             [4] Arbejdserfaring ', 'menu-option');
-    this.addLine(' [2] Uddannelse         [5] PLACEHOLDER', 'menu-option');
+    this.addLine(' [2] Uddannelse', 'menu-option');
     this.addLine(' [3] Kontakt            [0] Exit', 'menu-option');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine('');
@@ -428,5 +428,3 @@ document.addEventListener('keydown', (e) => {
     });
   }
 });
-
-
