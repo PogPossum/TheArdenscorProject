@@ -290,6 +290,9 @@ class DOSTerminal {
     this.addLine('                   -- Uddannelsesforløb --', 'highlight-text');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine(' ');
+
+    this.addLine('[] -- Valgfag, Database Programmering - Data og Kommunikation /', 'system-text');
+    this.addLine('      Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Hovedforløb 2 - Data og IT / Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Cloud CEDCE Kursus / ULC Erhvervsakademi og', 'system-text');
     this.addLine('      Professionshøjskole, Oddense', 'system-text');
