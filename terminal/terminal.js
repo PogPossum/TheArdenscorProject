@@ -350,6 +350,7 @@ class DOSTerminal {
     this.addLine('                    -- Arbejdserfaring --', 'highlight-text');
     this.addLine('=================================================================', 'ascii-art');
     this.addLine('                                                                 ', 'ascii-art');
+    this.addLine('[] -- 2nd Level Support / MErcantec, Viborg', 'system-text');
     this.addLine('[] -- Mercantec SOC Helpdesk / Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Frivillig Intern IT Support / EuroSKills 2025, Herning', 'system-text');
     this.addLine('                                                                 ', 'ascii-art');
