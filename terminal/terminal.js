@@ -224,7 +224,7 @@ class DOSTerminal {
     this.addLine(' [1]  -- Hvem er jeg.', 'menu-option');
     this.addLine(' [2]  -- Fritid og Hobby.', 'menu-option');
     this.addLine('   --------------------------------------------------', 'ascii-art');
-    this.addLine('   [  Jeg samler på retro spillekonsoller og reperare ', 'system-text');
+    this.addLine('   [  Jeg samler på retro spillekonsoller og reparere ', 'system-text');
     this.addLine('   [ dem selv løbende, hvis de går i stykker.', 'system-text');
     this.addLine('   [  Jeg kan li at være sammen med venner og ', 'system-text');
     this.addLine('   [ min familie når chancen byder sig.', 'system-text');
