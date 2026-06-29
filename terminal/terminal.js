@@ -296,7 +296,7 @@ class DOSTerminal {
     this.addLine('[]    Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Hovedforløb 2 - Data og Kommunikation / Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Cloud CEDCE Kursus / ULC Erhvervsakademi og', 'system-text');
-    this.addLine('      Professionshøjskole, Oddense', 'system-text');
+    this.addLine('[]    Professionshøjskole, Oddense', 'system-text');
     this.addLine('[] -- Hovedforløb 1 - Data og Kommunikation / Mercantec, Viborg', 'system-text');
     this.addLine('[] -- Grundforløb 2 - Data og Kommunikation / Tradium, Randers', 'system-text');
     this.addLine('[] -- Medie og Journalistik / FGU, Aarhus ', 'system-text');
