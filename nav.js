@@ -1,4 +1,3 @@
-// nav.js - toggles right-side nav panel and manages accessibility
 (function(){
   const toggle = document.getElementById('navToggle');
   const nav = document.getElementById('siteNav');
@@ -11,7 +10,6 @@
       nav.hidden = false;
     } else {
       nav.classList.remove('open');
-      // keep nav present but collapsed; setting hidden isn't strictly necessary
       nav.hidden = false;
     }
   }
@@ -21,7 +19,6 @@
     setExpanded(!expanded);
   });
 
-  // Close on escape key
   document.addEventListener('keydown', (e) => {
     if(e.key === 'Escape'){
       setExpanded(false);
@@ -29,7 +26,6 @@
     }
   });
 
-  // Close when clicking outside the nav on mobile
   document.addEventListener('click', (e) => {
     if(!nav.classList.contains('open')) return;
     const target = e.target;
